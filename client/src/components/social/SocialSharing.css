@@ -1,0 +1,56 @@
+.social-sharing {
+  margin: 16px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.social-button {
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-button:hover {
+  transform: scale(1.1);
+}
+
+.social-button.facebook {
+  color: #1877f2;
+}
+
+.social-button.twitter {
+  color: #1da1f2;
+}
+
+.social-button.linkedin {
+  color: #0a66c2;
+}
+
+.social-button.reddit {
+  color: #ff4500;
+}
+
+.social-button.telegram {
+  color: #0088cc;
+}
+
+.social-button.copy {
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .social-sharing {
+    margin: 8px 0;
+  }
+
+  .social-button {
+    font-size: 18px;
+    width: 36px;
+    height: 36px;
+  }
+} 

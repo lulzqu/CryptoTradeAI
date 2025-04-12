@@ -1,0 +1,70 @@
+.auto-trading {
+  padding: 24px;
+}
+
+.auto-trading .ant-card {
+  margin-bottom: 24px;
+}
+
+.auto-trading .ant-table {
+  margin-top: 16px;
+}
+
+.auto-trading .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.auto-trading .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.auto-trading .ant-card-body {
+  padding: 24px;
+}
+
+.auto-trading .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.auto-trading .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.auto-trading .ant-btn {
+  margin-right: 8px;
+}
+
+.auto-trading .ant-modal-body {
+  padding: 24px;
+}
+
+.auto-trading .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+.auto-trading .ant-input-number {
+  width: 100%;
+}
+
+.auto-trading .ant-select {
+  width: 100%;
+}
+
+.auto-trading .ant-switch {
+  margin-right: 8px;
+}
+
+.auto-trading .ant-space {
+  display: flex;
+  align-items: center;
+}
+
+.auto-trading .ant-card-extra {
+  padding: 0;
+}
+
+.auto-trading .ant-card-head-title {
+  font-size: 16px;
+  font-weight: 500;
+} 

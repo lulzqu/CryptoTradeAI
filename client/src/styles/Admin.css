@@ -1,0 +1,117 @@
+.admin-layout {
+  min-height: 100vh;
+  background-color: #f5f7fa;
+}
+
+.admin-tabs {
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+  height: 100%;
+}
+
+.admin-tabs .ant-tabs-nav {
+  width: 220px;
+  background-color: #001529;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.admin-tabs .ant-tabs-nav .ant-tabs-tab {
+  padding: 12px 16px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.65);
+  transition: all 0.3s;
+}
+
+.admin-tabs .ant-tabs-nav .ant-tabs-tab:hover {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+.admin-tabs .ant-tabs-nav .ant-tabs-tab-active {
+  color: #fff;
+  background-color: #1890ff;
+}
+
+.admin-tabs .ant-tabs-nav .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #fff;
+}
+
+.admin-tabs .ant-tabs-nav .ant-tabs-tab + .ant-tabs-tab {
+  margin-top: 4px;
+}
+
+.admin-tabs .ant-tabs-content {
+  height: 100%;
+  padding: 0;
+}
+
+.admin-content {
+  padding: 24px;
+  height: 100%;
+  overflow: auto;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.stats-row .ant-card {
+  margin-bottom: 16px;
+  transition: all 0.3s;
+}
+
+.stats-row .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.ant-table-wrapper {
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .admin-tabs .ant-tabs-nav {
+    width: 60px;
+  }
+  
+  .admin-tabs .ant-tabs-nav .ant-tabs-tab {
+    padding: 16px 0;
+    text-align: center;
+  }
+  
+  .admin-tabs .ant-tabs-nav .ant-tabs-tab .anticon {
+    margin-right: 0;
+    font-size: 18px;
+  }
+  
+  .admin-tabs .ant-tabs-nav .ant-tabs-tab span:not(.anticon) {
+    display: none;
+  }
+  
+  .admin-content {
+    padding: 16px;
+  }
+}
+
+/* Animation styles */
+.ant-table-row {
+  transition: all 0.3s;
+}
+
+.ant-table-row:hover {
+  background-color: rgba(24, 144, 255, 0.05);
+}
+
+.ant-card {
+  transition: all 0.2s;
+}
+
+.ant-card:hover {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.09);
+} 

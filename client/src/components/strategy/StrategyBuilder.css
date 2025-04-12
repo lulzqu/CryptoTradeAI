@@ -1,0 +1,68 @@
+.strategy-builder {
+  margin: 24px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-builder .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.strategy-builder .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.strategy-builder .ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.strategy-builder .ant-tabs-tab {
+  font-size: 14px;
+}
+
+.strategy-builder .ant-tabs-tab-active {
+  font-weight: 500;
+}
+
+.strategy-builder .ant-input-number {
+  width: 100%;
+}
+
+.strategy-builder .ant-select {
+  width: 100%;
+}
+
+.strategy-builder .ant-space {
+  width: 100%;
+}
+
+.strategy-builder .ant-btn {
+  margin-right: 8px;
+}
+
+/* Monaco Editor styles */
+.strategy-builder .monaco-editor {
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .strategy-builder {
+    margin: 16px;
+  }
+
+  .strategy-builder .ant-form-item {
+    margin-bottom: 12px;
+  }
+
+  .strategy-builder .ant-space {
+    flex-direction: column;
+  }
+
+  .strategy-builder .ant-btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+} 

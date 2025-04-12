@@ -1,0 +1,25 @@
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Cài đặt TypeScript
+RUN npm install -g typescript
+
+# Sao chép package.json và cài đặt dependencies
+COPY package*.json ./
+RUN npm install
+
+# Sao chép mã nguồn
+COPY . .
+
+# Biên dịch TypeScript
+RUN npm run build || true
+
+# Hiển thị thư mục dist để debug
+RUN ls -la dist || echo "Không tìm thấy thư mục dist"
+
+# Port mà ứng dụng lắng nghe
+EXPOSE 3000 8080
+
+# Chạy node trực tiếp với mã nguồn TypeScript
+CMD ["npm", "run", "dev"] 

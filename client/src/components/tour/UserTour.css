@@ -1,0 +1,33 @@
+.tour-trigger {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  font-size: 24px;
+  color: #1890ff;
+  cursor: pointer;
+  z-index: 1000;
+  background: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.tour-trigger:hover {
+  transform: scale(1.1);
+  color: #40a9ff;
+}
+
+@media (max-width: 768px) {
+  .tour-trigger {
+    bottom: 16px;
+    right: 16px;
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+  }
+} 

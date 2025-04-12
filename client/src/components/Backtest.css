@@ -1,0 +1,112 @@
+.backtest-container {
+  padding: 24px;
+  will-change: transform;
+  contain: content;
+}
+
+.backtest-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  contain: content;
+}
+
+.backtest-header h2 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  contain: content;
+}
+
+.backtest-details {
+  margin-bottom: 24px;
+  contain: content;
+  will-change: transform;
+}
+
+.backtest-table {
+  contain: content;
+  will-change: transform;
+}
+
+.backtest-stats {
+  contain: content;
+  will-change: transform;
+}
+
+/* Tối ưu animation */
+.backtest-container * {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+}
+
+/* Tối ưu loading states */
+.backtest-loading {
+  opacity: 0.7;
+  transition: opacity 0.2s ease-in-out;
+}
+
+/* Dark mode styles */
+[data-theme='dark'] .backtest-container {
+  background-color: #141414;
+}
+
+[data-theme='dark'] .backtest-header h2 {
+  color: #fff;
+}
+
+/* High contrast mode styles */
+[data-theme='high-contrast'] .backtest-container {
+  background-color: #000;
+}
+
+[data-theme='high-contrast'] .backtest-header h2 {
+  color: #fff;
+  font-weight: 700;
+}
+
+/* Mobile responsiveness with performance optimizations */
+@media (max-width: 768px) {
+  .backtest-container {
+    padding: 16px;
+    contain: content;
+  }
+
+  .backtest-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    contain: content;
+  }
+
+  .backtest-header h2 {
+    font-size: 20px;
+  }
+
+  /* Tối ưu cho mobile */
+  .backtest-details {
+    margin-bottom: 16px;
+    contain: content;
+  }
+
+  .backtest-table {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    contain: content;
+  }
+}
+
+/* Print styles */
+@media print {
+  .backtest-container {
+    padding: 0;
+  }
+
+  .backtest-header button,
+  .backtest-actions {
+    display: none;
+  }
+} 

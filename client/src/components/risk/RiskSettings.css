@@ -1,0 +1,60 @@
+.risk-settings {
+  margin: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.risk-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.risk-settings-intro {
+  margin-bottom: 24px;
+}
+
+.risk-settings .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.risk-settings .ant-select,
+.risk-settings .ant-input-number {
+  width: 100%;
+}
+
+.risk-settings .ant-checkbox-wrapper,
+.risk-settings .ant-switch-wrapper {
+  margin: 8px 0;
+}
+
+.risk-settings .ant-divider {
+  margin: 24px 0;
+}
+
+.risk-settings .ant-tooltip-inner {
+  max-width: 300px;
+}
+
+.risk-settings .ant-slider-mark-text {
+  width: auto;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .risk-settings {
+    margin: 8px;
+  }
+
+  .risk-settings-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .risk-settings .ant-form-item-label {
+    padding-bottom: 4px;
+  }
+} 

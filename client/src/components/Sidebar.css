@@ -1,0 +1,43 @@
+.sidebar {
+  background: #fff;
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+}
+
+.ant-menu {
+  border-right: none;
+}
+
+.ant-menu-item {
+  margin: 4px 0;
+  padding: 0 16px !important;
+  height: 40px;
+  line-height: 40px;
+}
+
+.ant-menu-item-selected {
+  background-color: #e6f7ff !important;
+}
+
+.ant-menu-item-selected::after {
+  border-right: 3px solid #1890ff !important;
+}
+
+.ant-menu-item:hover {
+  color: #1890ff !important;
+}
+
+.ant-menu-item .anticon {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+  }
+
+  .ant-menu-item {
+    padding: 0 12px !important;
+  }
+} 

@@ -1,0 +1,74 @@
+.user-management {
+  margin: 24px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.user-header .ant-typography {
+  font-size: 20px;
+  margin: 0;
+}
+
+.user-header .ant-space {
+  gap: 16px;
+}
+
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.ant-tag {
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.ant-btn {
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+.ant-modal-content {
+  border-radius: 8px;
+}
+
+.ant-form-item {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .user-management {
+    margin: 16px;
+  }
+
+  .user-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .user-header .ant-space {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .user-header .ant-input-search,
+  .user-header .ant-select {
+    width: 100% !important;
+  }
+} 

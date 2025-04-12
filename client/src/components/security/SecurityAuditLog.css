@@ -1,0 +1,54 @@
+.security-audit-log {
+  margin: 16px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.audit-log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.security-audit-log .ant-table {
+  background: transparent;
+}
+
+.security-audit-log .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.security-audit-log .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.security-audit-log .ant-tag {
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.security-audit-log .ant-picker {
+  border-radius: 4px;
+}
+
+.security-audit-log .ant-select {
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .security-audit-log {
+    margin: 8px 0;
+  }
+
+  .audit-log-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .security-audit-log .ant-table {
+    font-size: 14px;
+  }
+} 

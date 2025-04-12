@@ -1,0 +1,55 @@
+.faq {
+  padding: 24px;
+}
+
+.faq-header {
+  text-align: center;
+  background-color: #f0f2f5;
+  border-radius: 8px;
+  margin-bottom: 24px;
+}
+
+.faq-header .ant-typography {
+  margin-bottom: 16px;
+}
+
+.faq .ant-collapse {
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.faq .ant-collapse-header {
+  font-size: 16px;
+}
+
+.faq .ant-collapse-content {
+  background-color: #fafafa;
+}
+
+.faq .ant-tag {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.faq .ant-space {
+  margin-bottom: 16px;
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 16px;
+  }
+
+  .faq-header {
+    padding: 16px;
+  }
+
+  .faq .ant-collapse-header {
+    font-size: 14px;
+  }
+
+  .faq .ant-tag {
+    margin-right: 4px;
+    margin-bottom: 4px;
+  }
+} 

@@ -1,0 +1,116 @@
+.account-settings {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.account-settings-tabs .ant-tabs-nav {
+  margin-bottom: 16px;
+}
+
+.account-settings-card {
+  margin-bottom: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-header {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.avatar-container {
+  margin-right: 24px;
+  margin-bottom: 16px;
+}
+
+.avatar-uploader > .ant-upload {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-title {
+  flex: 1;
+}
+
+.edit-profile-button {
+  margin-left: auto;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.profile-info-item {
+  display: flex;
+  border-bottom: 1px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+.profile-info-item strong {
+  min-width: 120px;
+  margin-right: 16px;
+}
+
+.security-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.security-actions {
+  margin-top: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .account-settings {
+    padding: 8px;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .avatar-container {
+    margin-right: 0;
+    margin-bottom: 16px;
+  }
+  
+  .profile-title {
+    width: 100%;
+    margin-bottom: 16px;
+    text-align: center;
+  }
+  
+  .edit-profile-button {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .profile-info-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+  
+  .profile-info-item strong {
+    min-width: unset;
+    margin-right: 0;
+  }
+  
+  .security-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+} 

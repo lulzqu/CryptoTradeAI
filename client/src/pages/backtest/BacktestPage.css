@@ -1,0 +1,104 @@
+.backtest-page {
+  padding: 24px;
+}
+
+.page-header {
+  margin-bottom: 24px;
+}
+
+.page-header h1 {
+  margin-bottom: 8px;
+  font-size: 28px;
+}
+
+.page-header p {
+  margin-bottom: 0;
+  color: #8c8c8c;
+}
+
+.dark .page-header p {
+  color: #d9d9d9;
+}
+
+.backtest-tabs {
+  margin-bottom: 24px;
+}
+
+.backtest-tabs .ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+}
+
+.loading-container p {
+  margin-top: 16px;
+  color: #8c8c8c;
+}
+
+.dark .loading-container p {
+  color: #d9d9d9;
+}
+
+.error-alert {
+  margin-bottom: 24px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .backtest-page {
+    padding: 16px;
+  }
+
+  .page-header h1 {
+    font-size: 24px;
+  }
+
+  .backtest-tabs .ant-tabs-nav {
+    margin-bottom: 16px;
+  }
+}
+
+/* Dark Mode Styles */
+.dark .backtest-page {
+  background-color: #141414;
+  color: #d9d9d9;
+}
+
+.dark .page-header h1 {
+  color: #f0f0f0;
+}
+
+.dark .backtest-tabs .ant-tabs-tab {
+  color: #d9d9d9;
+}
+
+.dark .backtest-tabs .ant-tabs-tab-active {
+  color: #1890ff;
+}
+
+/* Animation */
+.backtest-page {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .backtest-page {
+    animation: none;
+  }
+} 

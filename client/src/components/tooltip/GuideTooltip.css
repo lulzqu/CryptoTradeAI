@@ -1,0 +1,38 @@
+.guide-tooltip-icon {
+  color: #1890ff;
+  cursor: help;
+  margin-left: 8px;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.guide-tooltip-icon:hover {
+  color: #40a9ff;
+}
+
+.guide-tooltip {
+  max-width: 300px;
+}
+
+.guide-tooltip-content {
+  color: #333;
+  padding: 8px;
+}
+
+.guide-tooltip-content h4 {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.guide-tooltip-content p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .guide-tooltip {
+    max-width: 250px;
+  }
+} 

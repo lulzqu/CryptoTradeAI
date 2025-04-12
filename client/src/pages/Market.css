@@ -1,0 +1,48 @@
+.market-container {
+  padding: 24px;
+}
+
+.market-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.market-filters .ant-select {
+  margin-bottom: 0;
+}
+
+.ant-card {
+  margin-bottom: 16px;
+}
+
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #fafafa;
+}
+
+.ant-tag {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .market-container {
+    padding: 16px;
+  }
+
+  .market-filters {
+    flex-direction: column;
+  }
+
+  .market-filters .ant-select {
+    width: 100% !important;
+  }
+} 

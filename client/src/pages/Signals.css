@@ -1,0 +1,43 @@
+.signals {
+  padding: 24px;
+}
+
+.ant-card {
+  background: #fff;
+}
+
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #fafafa;
+}
+
+.ant-tag {
+  margin-right: 0;
+}
+
+.ant-btn-text {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.ant-btn-text:hover {
+  color: #1890ff;
+  background: transparent;
+}
+
+@media (max-width: 768px) {
+  .signals {
+    padding: 12px;
+  }
+
+  .ant-table {
+    overflow-x: auto;
+  }
+} 

@@ -1,0 +1,194 @@
+.accessibility-toolbar {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 12px;
+  background: var(--background-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.accessibility-toolbar:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.accessibility-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.text-to-speech-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px;
+  background: var(--input-background);
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.text-to-speech-controls > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.text-to-speech-controls label {
+  color: var(--text-color);
+  font-size: 12px;
+  transition: color 0.3s ease;
+}
+
+/* Button Animations */
+.accessibility-toolbar button {
+  transition: all 0.2s ease;
+}
+
+.accessibility-toolbar button:hover {
+  transform: scale(1.05);
+  background: var(--primary-color-light);
+}
+
+.accessibility-toolbar button:active {
+  transform: scale(0.95);
+}
+
+/* Switch Animations */
+.accessibility-toolbar .ant-switch {
+  transition: all 0.3s ease;
+}
+
+.accessibility-toolbar .ant-switch:hover {
+  transform: scale(1.1);
+}
+
+/* Slider Animations */
+.accessibility-toolbar .ant-slider {
+  transition: all 0.3s ease;
+}
+
+.accessibility-toolbar .ant-slider:hover .ant-slider-handle {
+  transform: scale(1.2);
+}
+
+/* Focus Styles */
+.accessibility-toolbar button:focus,
+.accessibility-toolbar .ant-switch:focus,
+.accessibility-toolbar .ant-slider:focus,
+.accessibility-toolbar .ant-select:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
+}
+
+.accessibility-toolbar .ant-input:focus,
+.accessibility-toolbar .ant-select-focused .ant-select-selector {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
+}
+
+/* Tooltip Styles */
+.accessibility-toolbar .ant-tooltip {
+  z-index: 1001;
+}
+
+.accessibility-toolbar .ant-tooltip-inner {
+  background: var(--background-color);
+  color: var(--text-color);
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* High Contrast Mode */
+.high-contrast .accessibility-toolbar {
+  background: #fff;
+  border: 2px solid #000;
+}
+
+.high-contrast .text-to-speech-controls {
+  background: #fff;
+  border: 1px solid #000;
+}
+
+.high-contrast .text-to-speech-controls label {
+  color: #000;
+}
+
+.high-contrast .accessibility-toolbar button:focus,
+.high-contrast .accessibility-toolbar .ant-switch:focus,
+.high-contrast .accessibility-toolbar .ant-slider:focus,
+.high-contrast .accessibility-toolbar .ant-select:focus {
+  outline: 3px solid #000;
+  outline-offset: 2px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .accessibility-toolbar {
+    bottom: 16px;
+    right: 16px;
+    padding: 8px;
+    width: calc(100% - 32px);
+    max-width: 320px;
+  }
+
+  .text-to-speech-controls {
+    padding: 4px;
+  }
+
+  .accessibility-group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .accessibility-group > * {
+    flex: 1 1 calc(50% - 4px);
+    min-width: 120px;
+  }
+}
+
+/* Tablet Responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .accessibility-toolbar {
+    bottom: 20px;
+    right: 20px;
+    max-width: 360px;
+  }
+}
+
+/* Large Screen Optimizations */
+@media (min-width: 1025px) {
+  .accessibility-toolbar {
+    max-width: 400px;
+  }
+
+  .accessibility-group {
+    gap: 12px;
+  }
+
+  .text-to-speech-controls {
+    padding: 12px;
+  }
+}
+
+/* Dark Mode Adjustments */
+[data-theme="dark"] .accessibility-toolbar {
+  background: var(--dark-background);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .text-to-speech-controls {
+  background: var(--dark-input-background);
+}
+
+[data-theme="dark"] .accessibility-toolbar button:hover {
+  background: var(--dark-primary-color-light);
+} 

@@ -1,0 +1,52 @@
+.signal-generator {
+  margin: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.signal-generator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.signal-generator .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.signal-generator .ant-select {
+  width: 100%;
+}
+
+.signal-generator .ant-input-number {
+  width: 100%;
+}
+
+.signal-generator .ant-checkbox-wrapper {
+  margin: 8px 0;
+}
+
+.signal-generator .ant-divider {
+  margin: 16px 0;
+}
+
+.signal-generator .ant-space {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .signal-generator {
+    margin: 8px;
+  }
+
+  .signal-generator-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+} 

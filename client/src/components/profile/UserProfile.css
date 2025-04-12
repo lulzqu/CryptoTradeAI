@@ -1,0 +1,101 @@
+.user-profile {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.user-profile-header {
+  margin-bottom: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-content {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.user-profile-avatar {
+  margin-bottom: 16px;
+  display: block;
+}
+
+.user-profile-avatar-col {
+  text-align: center;
+}
+
+.user-profile-badges {
+  margin-top: 16px;
+}
+
+.user-profile-badges .ant-tag {
+  margin-right: 8px;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+}
+
+.user-profile .ant-descriptions {
+  margin-bottom: 24px;
+}
+
+.user-profile .ant-tabs-content {
+  padding-top: 16px;
+}
+
+.user-profile .ant-card-body {
+  padding: 16px;
+}
+
+.user-profile-achievement-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+
+.user-profile-achievement-icon {
+  margin-bottom: 16px;
+}
+
+.user-profile-achievement-content h4 {
+  margin-bottom: 8px;
+}
+
+.user-profile-strategies .ant-table,
+.user-profile .ant-table {
+  margin-top: 16px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .user-profile {
+    padding: 8px;
+  }
+  
+  .user-profile-header .ant-card-body,
+  .user-profile-content .ant-card-body {
+    padding: 12px;
+  }
+  
+  .user-profile-avatar {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 16px;
+  }
+  
+  .user-profile-badges {
+    margin-top: 12px;
+  }
+  
+  .user-profile .ant-descriptions-item-label,
+  .user-profile .ant-descriptions-item-content {
+    padding: 8px;
+  }
+  
+  .user-profile .ant-tabs-tab {
+    padding: 8px 12px;
+  }
+} 

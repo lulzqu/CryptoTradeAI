@@ -1,0 +1,190 @@
+/* Base styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.ant-layout-header {
+  background: #fff;
+  padding: 0 24px;
+  height: 64px;
+  line-height: 64px;
+  box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+}
+
+.ant-layout-sider {
+  background: #fff;
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+}
+
+.ant-layout-content {
+  padding: 24px;
+  background: #f0f2f5;
+  min-height: 280px;
+}
+
+.ant-card {
+  margin-bottom: 24px;
+}
+
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #fafafa;
+}
+
+.ant-tag {
+  margin-right: 0;
+}
+
+@media (max-width: 768px) {
+  .ant-layout-header {
+    padding: 0 12px;
+  }
+
+  .ant-layout-content {
+    padding: 12px;
+  }
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+/* Links */
+a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+/* Dashboard grid */
+.dashboard-grid {
+  display: grid;
+  grid-gap: 16px;
+}
+
+/* Responsive breakpoints */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Trading view charts */
+.tradingview-chart {
+  height: 400px;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Utility classes */
+.text-success {
+  color: #52c41a;
+}
+
+.text-error {
+  color: #f5222d;
+}
+
+.text-warning {
+  color: #faad14;
+}
+
+.bg-gradient {
+  background: linear-gradient(135deg, #1890ff 0%, #722ed1 100%);
+  color: white;
+} 

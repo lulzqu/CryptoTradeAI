@@ -1,0 +1,75 @@
+.chart-indicator {
+  margin: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.chart-indicator-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.chart-indicator-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.chart-indicator-list {
+  margin-top: 16px;
+}
+
+.chart-indicator-item {
+  border: 1px solid #f0f0f0;
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.chart-indicator-item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.chart-indicator-item-params {
+  margin-top: 8px;
+}
+
+.chart-indicator-item-params .ant-form-item {
+  margin-bottom: 8px;
+}
+
+.chart-indicator-footer {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .chart-indicator {
+    margin: 8px;
+  }
+
+  .chart-indicator-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .chart-indicator-item-params .ant-form {
+    flex-direction: column;
+  }
+
+  .chart-indicator-item-params .ant-form-item {
+    margin-right: 0;
+    width: 100%;
+  }
+} 

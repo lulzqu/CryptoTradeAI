@@ -1,0 +1,132 @@
+.user-settings-page {
+  padding: 24px;
+}
+
+.settings-card {
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+.settings-card .ant-tabs-nav {
+  margin-bottom: 0;
+}
+
+.tab-content {
+  padding: 24px;
+}
+
+.save-alert {
+  margin-bottom: 24px;
+}
+
+.profile-header {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.avatar-upload {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-info h4 {
+  margin-bottom: 4px;
+}
+
+.account-status {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.two-factor-section {
+  margin-bottom: 24px;
+}
+
+.two-factor-status {
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sessions-card, .api-keys-card {
+  margin-top: 16px;
+}
+
+.session-item, .api-key-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.session-item:last-child, .api-key-item:last-child {
+  border-bottom: none;
+}
+
+.session-info, .api-key-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.session-device, .api-key-name {
+  font-weight: 500;
+}
+
+.session-ip, .session-time, .api-key-created, .api-key-permissions {
+  color: rgba(0, 0, 0, 0.45);
+  font-size: 12px;
+}
+
+.api-key-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.security-alert {
+  margin-bottom: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .user-settings-page {
+    padding: 16px;
+  }
+  
+  .tab-content {
+    padding: 16px;
+  }
+  
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .profile-info {
+    align-items: center;
+  }
+  
+  .session-item, .api-key-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .api-key-actions {
+    align-self: flex-end;
+  }
+} 

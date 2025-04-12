@@ -1,0 +1,57 @@
+.two-factor-auth {
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.two-factor-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.two-factor-form {
+  margin-top: 16px;
+}
+
+.two-factor-form .ant-input-affix-wrapper {
+  border-radius: 4px;
+}
+
+.two-factor-form .ant-input-affix-wrapper:hover,
+.two-factor-form .ant-input-affix-wrapper:focus {
+  border-color: #1890ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+.two-factor-form .ant-btn {
+  height: 40px;
+  font-size: 16px;
+  border-radius: 4px;
+}
+
+.two-factor-qr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 24px 0;
+}
+
+.qr-instructions {
+  text-align: center;
+  max-width: 300px;
+}
+
+@media (max-width: 768px) {
+  .two-factor-auth {
+    margin: 0 16px;
+  }
+
+  .two-factor-form .ant-btn {
+    height: 36px;
+    font-size: 14px;
+  }
+} 

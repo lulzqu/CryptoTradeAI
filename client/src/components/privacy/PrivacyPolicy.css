@@ -1,0 +1,64 @@
+.privacy-policy {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.privacy-policy-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.privacy-policy .ant-typography {
+  margin-bottom: 16px;
+}
+
+.last-updated {
+  display: block;
+  margin-bottom: 24px;
+  color: #8c8c8c;
+}
+
+.privacy-section {
+  margin-bottom: 24px;
+}
+
+.privacy-section .ant-typography {
+  margin-bottom: 16px;
+}
+
+.privacy-section .ant-list-item {
+  padding: 8px 0;
+}
+
+.privacy-section .anticon {
+  margin-right: 8px;
+  color: #1890ff;
+}
+
+.ant-divider {
+  margin: 24px 0;
+}
+
+@media (max-width: 768px) {
+  .privacy-policy {
+    padding: 16px;
+  }
+
+  .privacy-policy .ant-typography {
+    margin-bottom: 12px;
+  }
+
+  .last-updated {
+    margin-bottom: 16px;
+  }
+
+  .privacy-section {
+    margin-bottom: 16px;
+  }
+
+  .ant-divider {
+    margin: 16px 0;
+  }
+} 

@@ -1,0 +1,134 @@
+.backtest-form-card {
+  margin-bottom: 24px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.backtest-form-card .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.dark .backtest-form-card .ant-card-head {
+  border-bottom: 1px solid #303030;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.form-item {
+  margin-bottom: 0;
+}
+
+.form-item-full {
+  margin-bottom: 24px;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.backtest-error {
+  margin-bottom: 24px;
+}
+
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  border-radius: 2px;
+}
+
+.dark .loading-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.loading-overlay p {
+  margin-top: 16px;
+  color: #8c8c8c;
+}
+
+.dark .loading-overlay p {
+  color: #d9d9d9;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 0;
+  }
+
+  .form-item {
+    margin-bottom: 24px;
+  }
+
+  .form-actions {
+    flex-direction: column;
+  }
+
+  .form-actions button {
+    width: 100%;
+  }
+}
+
+/* Dark Mode Styles */
+.dark .backtest-form-card {
+  background-color: #1f1f1f;
+}
+
+.dark .backtest-form-card .ant-form-item-label > label {
+  color: #d9d9d9;
+}
+
+.dark .backtest-form-card .ant-input,
+.dark .backtest-form-card .ant-select-selector,
+.dark .backtest-form-card .ant-picker,
+.dark .backtest-form-card .ant-input-number {
+  background-color: #141414;
+  border-color: #434343;
+  color: #d9d9d9;
+}
+
+.dark .backtest-form-card .ant-input-number-handler-wrap {
+  background-color: #1f1f1f;
+}
+
+.dark .backtest-form-card .ant-form-item-required::before {
+  color: #ff4d4f;
+}
+
+/* Add animations */
+.backtest-form-card {
+  transition: box-shadow 0.3s ease;
+}
+
+.backtest-form-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dark .backtest-form-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .backtest-form-card {
+    transition: none;
+  }
+} 

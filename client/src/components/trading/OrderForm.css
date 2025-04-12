@@ -1,0 +1,61 @@
+.order-form {
+  margin: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.order-form .ant-card-head {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.order-form .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.order-form .ant-radio-group {
+  display: flex;
+  width: 100%;
+}
+
+.order-form .ant-radio-button-wrapper {
+  flex: 1;
+  text-align: center;
+}
+
+.order-form .ant-input-number {
+  width: 100%;
+}
+
+.order-form .ant-input-number-group-addon {
+  background: #fafafa;
+}
+
+.order-form .ant-btn {
+  height: 40px;
+  font-size: 16px;
+}
+
+.order-form .ant-divider {
+  margin: 16px 0;
+}
+
+.order-form .ant-form-item-label > label {
+  font-weight: 500;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .order-form {
+    margin: 8px;
+  }
+
+  .order-form .ant-form-item {
+    margin-bottom: 12px;
+  }
+
+  .order-form .ant-btn {
+    height: 36px;
+    font-size: 14px;
+  }
+} 

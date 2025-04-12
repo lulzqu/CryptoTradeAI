@@ -1,0 +1,32 @@
+.theme-toggle {
+  background-color: #f0f0f0;
+}
+
+.theme-toggle.ant-switch-checked {
+  background-color: #1890ff;
+}
+
+.theme-toggle .anticon {
+  font-size: 16px;
+  color: #fff;
+}
+
+.theme-toggle.ant-switch-small {
+  width: 40px;
+  height: 20px;
+}
+
+.theme-toggle.ant-switch-small .anticon {
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .theme-toggle {
+    width: 36px;
+    height: 18px;
+  }
+
+  .theme-toggle .anticon {
+    font-size: 14px;
+  }
+} 

@@ -1,0 +1,51 @@
+.community {
+  padding: 24px;
+}
+
+.strategy-card {
+  margin-bottom: 16px;
+  transition: all 0.3s;
+}
+
+.strategy-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.comment-section {
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.ant-list-item-meta-title {
+  margin-bottom: 4px !important;
+}
+
+.ant-list-item-meta-description {
+  color: rgba(0, 0, 0, 0.45) !important;
+}
+
+.ant-statistic-title {
+  font-size: 14px !important;
+}
+
+.ant-rate {
+  font-size: 16px;
+}
+
+.ant-btn-text {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.ant-btn-text:hover {
+  color: #1890ff;
+}
+
+.ant-avatar {
+  background-color: #1890ff;
+}
+
+.ant-divider {
+  margin: 12px 0;
+} 

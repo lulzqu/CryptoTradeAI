@@ -1,0 +1,186 @@
+.main-layout {
+  min-height: 100vh;
+}
+
+.main-layout.dark {
+  background-color: #141414;
+  color: #fff;
+}
+
+.main-layout.light {
+  background-color: #f0f2f5;
+  color: #000;
+}
+
+.main-sider {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+}
+
+.main-sider .logo {
+  height: 64px;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.main-sider .logo img {
+  height: 32px;
+  width: auto;
+}
+
+.main-sider .logo span {
+  color: inherit;
+  font-size: 18px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.main-header {
+  padding: 0 24px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.dark .main-header {
+  background: #1f1f1f;
+}
+
+.trigger-button {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.trigger-button:hover {
+  color: #1890ff;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.main-content {
+  margin: 24px;
+  padding: 24px;
+  background: #fff;
+  border-radius: 4px;
+  min-height: 280px;
+}
+
+.dark .main-content {
+  background: #1f1f1f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .main-sider {
+    position: fixed;
+    height: 100vh;
+    left: 0;
+    top: 0;
+  }
+
+  .main-header {
+    padding: 0 16px;
+  }
+
+  .main-content {
+    margin: 16px;
+    padding: 16px;
+  }
+}
+
+/* Animations */
+.main-sider {
+  transition: all 0.3s ease;
+}
+
+.trigger-button {
+  transition: all 0.3s ease;
+}
+
+/* Dark Mode Transitions */
+.main-layout {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.main-content {
+  transition: background-color 0.3s ease;
+}
+
+/* Loading States */
+.loading-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.dark .loading-overlay {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+/* Error States */
+.error-message {
+  padding: 16px;
+  margin: 16px 0;
+  border-radius: 4px;
+  background: #fff2f0;
+  border: 1px solid #ffccc7;
+  color: #cf1322;
+}
+
+.dark .error-message {
+  background: #2a1215;
+  border: 1px solid #431418;
+  color: #ff4d4f;
+}
+
+/* Tooltips */
+.tooltip-icon {
+  margin-left: 8px;
+  color: #8c8c8c;
+  cursor: help;
+}
+
+.dark .tooltip-icon {
+  color: #595959;
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .main-sider,
+  .trigger-button,
+  .main-layout,
+  .main-content {
+    transition: none;
+  }
+}
+
+/* Print Styles */
+@media print {
+  .main-sider,
+  .main-header {
+    display: none;
+  }
+
+  .main-content {
+    margin: 0;
+    padding: 0;
+  }
+} 

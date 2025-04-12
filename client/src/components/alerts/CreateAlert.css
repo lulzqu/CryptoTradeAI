@@ -1,0 +1,69 @@
+.create-alert {
+  margin: 0 0 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.create-alert-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.create-alert .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.condition-price-group {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+  margin-bottom: 8px;
+}
+
+.condition-price-group .ant-form-item {
+  margin-bottom: 0;
+  flex: 1;
+}
+
+.create-alert-button {
+  width: 100%;
+  height: 40px;
+  font-weight: 500;
+}
+
+.create-alert .ant-select-selector,
+.create-alert .ant-input-number,
+.create-alert .ant-input {
+  border-radius: 4px;
+}
+
+.create-alert .ant-input-number-handler-wrap {
+  border-radius: 0 4px 4px 0;
+}
+
+.create-alert .ant-card-body {
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .create-alert {
+    margin: 0 0 16px;
+  }
+  
+  .condition-price-group {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .create-alert-header {
+    margin-bottom: 16px;
+  }
+  
+  .create-alert .ant-card-body {
+    padding: 16px;
+  }
+} 

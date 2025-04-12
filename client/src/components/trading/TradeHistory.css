@@ -1,0 +1,73 @@
+.trade-history {
+  margin: 16px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.trade-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.trade-history .ant-table {
+  background: #fff;
+  border-radius: 4px;
+}
+
+.trade-history .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+  padding: 12px 16px;
+}
+
+.trade-history .ant-table-tbody > tr > td {
+  padding: 12px 16px;
+}
+
+.trade-history .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.trade-history .ant-tag {
+  margin-right: 0;
+}
+
+.trade-history .ant-btn {
+  margin-right: 8px;
+}
+
+.trade-history .ant-select {
+  min-width: 120px;
+}
+
+.trade-history .ant-picker {
+  min-width: 250px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .trade-history {
+    margin: 8px;
+  }
+
+  .trade-history-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .trade-history .ant-table-thead > tr > th,
+  .trade-history .ant-table-tbody > tr > td {
+    padding: 8px;
+  }
+
+  .trade-history .ant-select,
+  .trade-history .ant-picker {
+    width: 100%;
+  }
+} 

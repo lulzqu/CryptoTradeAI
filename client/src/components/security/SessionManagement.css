@@ -1,0 +1,58 @@
+.session-management {
+  margin: 16px 0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.session-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.session-management .ant-table {
+  background: transparent;
+}
+
+.session-management .ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.session-management .ant-table-tbody > tr:hover > td {
+  background: #f5f5f5;
+}
+
+.session-management .ant-tag {
+  border-radius: 4px;
+  padding: 2px 8px;
+}
+
+.session-management .ant-btn {
+  border-radius: 4px;
+}
+
+.session-management .anticon {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .session-management {
+    margin: 8px 0;
+  }
+
+  .session-header {
+    flex-direction: column;
+    gap: 16px;
+    align-items: flex-start;
+  }
+
+  .session-management .ant-table {
+    font-size: 14px;
+  }
+
+  .session-management .anticon {
+    font-size: 14px;
+  }
+} 

@@ -1,0 +1,60 @@
+.api-settings {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.api-settings-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 24px;
+}
+
+.api-settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.api-settings-description {
+  margin-bottom: 24px;
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.api-key-details {
+  padding: 16px;
+  background-color: #fafafa;
+  border-radius: 4px;
+}
+
+/* Ẩn một phần của API key và secret trên mobile */
+@media (max-width: 768px) {
+  .api-settings {
+    padding: 8px;
+  }
+  
+  .api-settings-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  
+  .api-settings-header button {
+    align-self: flex-start;
+  }
+  
+  .ant-table-cell {
+    padding: 8px 4px !important;
+  }
+  
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 120px;
+  }
+} 

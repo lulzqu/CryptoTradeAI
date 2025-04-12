@@ -1,0 +1,96 @@
+.risk-management-page {
+  padding: 24px;
+}
+
+.page-description {
+  margin-bottom: 24px;
+  max-width: 800px;
+}
+
+.risk-progress {
+  margin: 12px 0;
+}
+
+.risk-setting-item, .risk-feature-item, .metric-item, .result-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.risk-setting-item:last-child, .risk-feature-item:last-child, .metric-item:last-child, .result-item:last-child {
+  margin-bottom: 0;
+}
+
+.risk-level-analysis {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.risk-exposure-chart, .risk-metrics {
+  flex: 1;
+}
+
+.exposure-item {
+  margin-bottom: 12px;
+}
+
+.exposure-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4px;
+}
+
+.chart-placeholder {
+  margin-top: 16px;
+}
+
+.risk-calculator-card .ant-form-item {
+  margin-bottom: 16px;
+}
+
+.calculation-result {
+  margin-top: 16px;
+}
+
+.risk-faq {
+  margin-top: 16px;
+}
+
+.risk-faq .ant-collapse-header {
+  font-weight: 500;
+}
+
+.positive {
+  color: #52c41a;
+}
+
+.negative {
+  color: #f5222d;
+}
+
+.warning {
+  color: #faad14;
+}
+
+/* Responsive styles */
+@media (min-width: 992px) {
+  .risk-level-analysis {
+    flex-direction: row;
+  }
+  
+  .risk-exposure-chart {
+    padding-right: 16px;
+    border-right: 1px solid #f0f0f0;
+  }
+  
+  .risk-metrics {
+    padding-left: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .risk-management-page {
+    padding: 16px;
+  }
+} 

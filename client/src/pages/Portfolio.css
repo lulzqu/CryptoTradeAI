@@ -1,0 +1,139 @@
+.portfolio {
+  padding: 24px;
+}
+
+.portfolio .ant-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  transition: all 0.3s;
+}
+
+.portfolio .ant-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tab-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.asset-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #1890ff;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.analysis-content {
+  padding: 16px 0;
+}
+
+.stat-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.stat-item:last-child {
+  border-bottom: none;
+}
+
+.stat-item .label {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.stat-item .value {
+  font-weight: 500;
+}
+
+.stat-item .value.positive {
+  color: #52c41a;
+}
+
+.stat-item .value.negative {
+  color: #f5222d;
+}
+
+.ant-card {
+  background: #fff;
+}
+
+.ant-table {
+  background: #fff;
+}
+
+.ant-table-thead > tr > th {
+  background: #fafafa;
+  font-weight: 500;
+}
+
+.ant-table-tbody > tr:hover > td {
+  background: #fafafa;
+}
+
+.ant-tag {
+  margin-right: 0;
+}
+
+.allocation-item {
+  margin-bottom: 16px;
+}
+
+.allocation-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.asset {
+  font-weight: 500;
+}
+
+.percentage {
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.ant-progress {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .portfolio {
+    padding: 12px;
+  }
+  
+  .portfolio-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  
+  .portfolio-header .ant-space {
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .tab-actions {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .ant-table {
+    overflow-x: auto;
+  }
+} 
